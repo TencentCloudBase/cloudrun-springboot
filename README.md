@@ -38,10 +38,6 @@
 
 单击"CREATE"按钮,下载压缩文件并解压到你机器的文件夹中。
 
-### 源码
-
-[cloudrun-springboot](https://github.com/TencentCloudBase/tcbr-templates/tree/main/cloudrun-springboot)
-
 ### 部署到云托管
 
 1、在 Spring Boot 应用程序的跟目录中创建一个 `Dockerfile` 文件, 文件内容如下:
