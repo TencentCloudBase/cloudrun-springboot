@@ -1,0 +1,4 @@
+#!/bin/bash
+export PORT=9000
+export JAVA_OPTS="-Xmx512m -Xms256m -XX:+UseG1GC"
+java $JAVA_OPTS -jar *.jar

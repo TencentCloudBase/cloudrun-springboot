@@ -4,8 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CloudRunApplication {
+public class CloudrunApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(CloudRunApplication.class, args);
+        SpringApplication.run(CloudrunApplication.class, args);
     }
 }
