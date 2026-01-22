@@ -1,0 +1,5 @@
+com/tencent/cloudrun/controller/HealthController.class
+com/tencent/cloudrun/controller/UserController.class
+com/tencent/cloudrun/dto/ApiResponse.class
+com/tencent/cloudrun/entity/User.class
+com/tencent/cloudrun/CloudrunApplication.class
