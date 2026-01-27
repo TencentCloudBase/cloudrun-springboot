@@ -1,4 +1,5 @@
 #!/bin/bash
 export PORT=9000
-export JAVA_OPTS="-Xmx512m -Xms256m -XX:+UseG1GC"
-java $JAVA_OPTS -jar *.jar
+export JAVA_OPTS="-Xms256m -Xmx512m"
+cd /var/user
+java $JAVA_OPTS -jar target/cloudrun-springboot-1.0-SNAPSHOT.jar

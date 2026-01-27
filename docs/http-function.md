@@ -47,7 +47,7 @@ HTTP 云函数适合以下场景：
 export PORT=9000
 export JAVA_OPTS="-Xms256m -Xmx512m"
 cd /var/user
-java $JAVA_OPTS -jar cloudrun-springboot-1.0-SNAPSHOT.jar
+java $JAVA_OPTS -jar target/cloudrun-springboot-1.0-SNAPSHOT.jar
 ```
 
 为启动脚本添加执行权限：
@@ -143,6 +143,10 @@ cloudrun-springboot/
 
 ### 通过控制台部署
 
+> 💡 **注意**：
+> - java 程序启动较慢，需要调整函数执行超时时间，默认为 3s, 建议调整 10s
+
+
 1. 登录 [CloudBase 控制台](https://console.cloud.tencent.com/tcb)
 2. 选择您的环境，进入「云函数」页面
 3. 点击「新建云函数」
@@ -154,18 +158,7 @@ cloudrun-springboot/
 9. **自动安装依赖**：关闭此选项（Java 项目使用预构建的 JAR）
 10. 点击「创建」按钮等待部署完成
 
-### 通过 CLI 部署
-
-```bash
-# 安装 CloudBase CLI
-npm install -g @cloudbase/cli
-
-# 登录
-tcb login
-
-# 部署云函数
-tcb functions:deploy cloudrun-springboot-app --dir ./
-```
+### 通过 CLI 部署(敬请期待)
 
 ### 打包部署
 
